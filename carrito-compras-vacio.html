@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras</title>
+    <link rel="icon" href="./icon_pagina.png" type="image/x-icon">
+    <!-- No olvidar comentar el título -->
+    <title>Título</title>
 </head>
 <body>
-    <header>
-        <h1>Carrito de compras</h1>
-    </header>
-    
+    <nav>
+        <ul>
+            <li><a href="/inicio-sesion.html">Inicio de sesión</a></li>
+            <li><a href="/registro.html">Registro</a></li>
+            <li><a href="/lista-productos.html">Productos</a></li>
+            <li><a href="/carrito-compras.html">Carrito</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section>
             <h2>Productos disponibles</h2>
@@ -33,17 +40,21 @@
         </section>
         <section>
             <h2>Tu carrito</h2>
-            <ul>
-                <li>Producto 1 - S/. 10.00 <button>Eliminar</button></li>
-                <li>Producto 2 - S/. 15.00 <button>Eliminar</button></li>
-            </ul>
-            <p><strong>Total: S/. 25.00</strong></p>
-            <a href="/finalizar-pedido.html"><button>Finalizar compra</button></a>
+            <p>No tienes ningún producto en tu carrito, agrega alguno.</p>
         </section>
     </main>
-    
+
     <footer>
-        <p>© 2024 JoyBox</p>
+        <div aria-label="Enlaces del sitio">
+            <ul>
+                <li><a href="/inicio-sesion.html">Inicio de sesión</a></li>
+                <li><a href="/registro.html">Registro</a></li>
+                <li><a href="/lista-productos.html">Productos</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
