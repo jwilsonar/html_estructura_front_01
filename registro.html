@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./icon_pagina.png" type="image/x-icon">
-    <!-- No olvidar comentar el título -->
-    <title>Título</title>
+    <link rel="icon" href="./icon_pagina.png" type="image/x-icon">    
+    <link rel="stylesheet" href="./styles.css">
+    <title>Registro</title>
 </head>
 <body>
     <nav>
         <ul>
+            <li><a href="/index.html">Inicio</a></li>
             <li><a href="/inicio-sesion.html">Inicio de sesión</a></li>
             <li><a href="/registro.html">Registro</a></li>
             <li><a href="/lista-productos.html">Productos</a></li>
-            <li><a href="/carrito-compras.html">Carrito</a></li>
+            <li><a href="/carrito-compras-productos.html">Carrito</a></li>
         </ul>
     </nav>
 
     <main>
         <h1>Registro de Usuario</h1>
         <form action="#" method="post">
-            <label for="username">Nombre de usuario:</label><br>
-            <input type="text" id="username" name="username" required><br><br>
+            <div>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
             
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
             
-            <label for="password">Contraseña:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
             
-            <input type="submit" value="Registrarse">
+            <button>
+                Registrarse
+            </button>
         </form>
+        <p>¿Ya tienes una cuenta?</p>
+        <a href="./inicio-sesion.html">Iniciar sesión</a>
     </main>
 
     <footer>
-        <div aria-label="Enlaces del sitio">
+        <div >
             <ul>
                 <li><a href="/inicio-sesion.html">Inicio de sesión</a></li>
                 <li><a href="/registro.html">Registro</a></li>

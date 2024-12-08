@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./icon_pagina.png" type="image/x-icon">
-    <!-- No olvidar comentar el título -->
-    <title>Título</title>
+    <link rel="icon" href="./icon_pagina.png" type="image/x-icon">  
+    <link rel="stylesheet" href="./styles.css">  
+    <title>Finalizar Pedido</title>
 </head>
 <body>
     <nav>
         <ul>
+            <li><a href="/index.html">Inicio</a></li>
             <li><a href="/inicio-sesion.html">Inicio de sesión</a></li>
             <li><a href="/registro.html">Registro</a></li>
             <li><a href="/lista-productos.html">Productos</a></li>
-            <li><a href="/carrito-compras.html">Carrito</a></li>
+            <li><a href="/carrito-compras-productos.html">Carrito</a></li>
         </ul>
     </nav>
 
     <main>
-        <section class="order-summary">
+        <section>
             <h2>Resumen del Pedido</h2>
             <ul>
                 <li>Juego 1 - S/. 59.99</li>
@@ -27,51 +28,52 @@
             </ul>
         </section>
 
-        <section class="shipping-info">
-            <h2>Información de Envío</h2>
-            <form>
-                <label for="name">Nombre Completo:</label>
-                <input type="text" id="name" name="name" required><br><br>
+        <section class="contenedor__finalizar__pedido">
+            <div>
+                <h2>Información de Envío</h2>
+                <form>
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="address">Dirección:</label>
-                <input type="text" id="address" name="address" required><br><br>
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required>
 
-                <label for="city">Ciudad:</label>
-                <input type="text" id="city" name="city" required><br><br>
+                    <label for="city">Ciudad:</label>
+                    <input type="text" id="city" name="city" required>
 
-                <label for="postal-code">Código Postal:</label>
-                <input type="text" id="postal-code" name="postal-code" required><br><br>
+                    <label for="postal-code">Código Postal:</label>
+                    <input type="text" id="postal-code" name="postal-code" required>
 
-                <label for="country">País:</label>
-                <input type="text" id="country" name="country" required>
-            </form>
+                    <label for="country">País:</label>
+                    <input type="text" id="country" name="country" required>
+                </form>
+            </div>
+            <div>
+                <h2>Método de Pago</h2>
+                <form>
+                    <label for="card-name">Nombre en la Tarjeta:</label>
+                    <input type="text" id="card-name" name="card-name" required>
+
+                    <label for="card-number">Número de Tarjeta:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+
+                    <label for="expiry-date">Fecha de Expiración:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </form>
+            </div>
         </section>
 
-        <section class="payment-method">
-            <h2>Método de Pago</h2>
-            <form>
-                <label for="card-name">Nombre en la Tarjeta:</label>
-                <input type="text" id="card-name" name="card-name" required><br><br>
-
-                <label for="card-number">Número de Tarjeta:</label>
-                <input type="text" id="card-number" name="card-number" required><br><br>
-
-                <label for="expiry-date">Fecha de Expiración:</label>
-                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required><br><br>
-
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" required>
-            </form>
-        </section>
-
-        <section class="confirm-order">
+        <section>
             <h2>Confirmar Pedido</h2>
             <button type="submit">Finalizar Pedido</button>
         </section>
     </main>
 
     <footer>
-        <div aria-label="Enlaces del sitio">
+        <div>
             <ul>
                 <li><a href="/inicio-sesion.html">Inicio de sesión</a></li>
                 <li><a href="/registro.html">Registro</a></li>

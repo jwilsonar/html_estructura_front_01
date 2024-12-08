@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color_principal: #98d5d4;
+    --color_fondo: #091515;
+    --color_texto: #ddefef;
+    --color_secundario: #307f7e;
+    --color_accent: #47bebb;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color_fondo);
+    color: var(--color_texto);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+}
+/* Estilos para la navegación*/
+nav{
+    width: 100%;
+    min-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color_principal);
+    transition: all .3s ease-in;
+}
+a:hover{
+    color: var(--color_texto);
+}
+h1{
+    margin-bottom: 1rem;
+}
+/* Estilos para el contenido principal*/
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*Estilos para el pie de página*/
+footer{
+    background-color: black;
+    padding: 1rem 0;
+    
+}
+
+footer div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer div ul{
+    display: flex;
+    flex-direction: column;
+}
+footer p{
+    text-align: center;
+}
+
+/*Estilos para el formulario*/
+form{
+    background-color: var(--color_secundario);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    padding: .5rem 1rem;
+    background-color: var(--color_principal);
+    border-radius: .5rem;
+    transition: all .5s ease-in;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+form div label{
+    margin-bottom: .5rem;
+}
+input{
+    background-color: transparent;
+    border: 1px solid var(--color_texto);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+button:hover{
+    filter: drop-shadow(0 0 10px var(--color_texto));
+}
+
+/*Estilo para los productos*/
+
+img{
+    max-width: 250px;
+}
+.contenedor__productos{
+    display: flex;
+    gap: 1rem;
+}
+.contenedor__productos div{
+    display: flex;
+    flex-direction: column;
+}
+.contenido__producto{
+    background-color: var(--color_secundario);
+    padding: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+section{
+    margin-bottom: 1rem;
+}
+.contenedor__carrito{
+    background-color: var(--color_secundario);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.contenedor__carrito ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.contenedor__carrito ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carrito__mas_productos img{
+    max-width: 180px;
+}
+
+/*Estilos para finalizar el pedido*/
+
+.contenedor__finalizar__pedido{
+    display: flex;
+    gap: 2rem;
+}
