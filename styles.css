@@ -166,3 +166,10 @@ section{
     display: flex;
     gap: 2rem;
 }
+
+.error-mensaje {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
