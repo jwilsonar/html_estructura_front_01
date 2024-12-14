@@ -6,6 +6,7 @@
     <link rel="icon" href="./icon_pagina.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
     <title>Carrito</title>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -20,13 +21,18 @@
 
     <main>        
         <section>
-            <div class="contenedor__carrito">
+            <div id="carritoVacio" class="contenedor__carrito" style="display: none;">
+                <h2>Tu carrito está vacío</h2>
+                <p>¿Por qué no agregas algunos productos?</p>
+                <a href="/lista-productos.html"><button>Ver productos</button></a>
+            </div>
+
+            <div id="carritoConProductos" class="contenedor__carrito">
                 <h2>Tu carrito</h2>
-                <ul>
-                    <li>Producto 1 - S/. 10.00 <button>Eliminar</button></li>
-                    <li>Producto 2 - S/. 15.00 <button>Eliminar</button></li>
+                <ul id="carritoLista">
+                    <!-- Los items del carrito se insertarán aquí dinámicamente -->
                 </ul>
-                <p><strong>Total: S/. 25.00</strong></p>
+                <p><strong>Total: <span id="totalCarrito">S/. 0.00</span></strong></p>
                 <a href="/finalizar-pedido.html"><button>Finalizar compra</button></a>
             </div>
         </section>
@@ -34,33 +40,33 @@
             <h2>Productos disponibles</h2>
             <div class="contenedor__productos">
                 <div>
-                    <img src="juego.avif" alt="">
+                    <img src="juego.avif" alt="Juego Lorem 1">
                     <div class="contenido__producto">
                         <h3>Juego Lorem 1</h3>
                         <div>
                             <p>S/ 150.00</p>
-                            <a href="./carrito-compras-vacio.html"><button>Añadir al carrito</button></a>
+                            <button onclick="agregarAlCarrito(1)">Añadir al carrito</button>
                         </div>
                     </div>
                 </div>
                 
                 <div>
-                    <img src="juego.avif" alt="">
+                    <img src="juego.avif" alt="Juego Lorem 2">
                     <div class="contenido__producto">
                         <h3>Juego Lorem 2</h3>
                         <div>
                             <p>S/ 200.00</p>
-                            <a href="./carrito-compras-vacio.html"><button>Añadir al carrito</button></a>
+                            <button onclick="agregarAlCarrito(2)">Añadir al carrito</button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img src="juego.avif" alt="">
+                    <img src="juego.avif" alt="Juego Lorem 3">
                     <div class="contenido__producto">
                         <h3>Juego Lorem 3</h3>
                         <div>
                             <p>S/ 500.00</p>
-                            <a href="./carrito-compras-vacio.html"><button>Añadir al carrito</button></a>
+                            <button onclick="agregarAlCarrito(3)">Añadir al carrito</button>
                         </div>
                     </div>
                 </div>
