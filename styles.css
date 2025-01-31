@@ -528,26 +528,6 @@ section{
     }
 }
 
-/* Estilos para la navegación con íconos */
-.nav-brand {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    padding-left: 2rem;
-}
-
-.nav-brand a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--color_principal);
-}
-
-.nav-brand i {
-    font-size: 2rem;
-}
 
 
 
@@ -775,7 +755,6 @@ footer p {
     background-color: var(--color_principal);
     border: none;
     width: 24px;
-    height: 24px;
     border-radius: 50%;
     display: flex;
     align-items: center;
